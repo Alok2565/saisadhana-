@@ -1,0 +1,273 @@
+/*
+Project     :	Arisen
+Version     :	1.0
+Last Change : 	24/06/2017
+Primary Use :   Arisen
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Elementor General
+2. Sub Headings and Button Hover
+3. Progress Bar
+4. Media Queries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1. Elementor General
+--------------------------------------------------------------*/
+.elementor-widget:not(:last-child) {
+    margin-bottom: 0 !important;
+}
+.elementor-icon{
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+2. Sub Headings and Button Hover
+--------------------------------------------------------------*/
+/* header-1 content width */
+.header-overlay .hcontent{
+	width:60% !important;
+	margin:0 auto;
+}
+/* cta content width */
+.header-overlay .cta-content{
+	width:75% !important;
+	margin:0 auto;
+}
+
+/* all buttons */
+.elementor-button:active,
+.elementor-button:focus,
+.elementor-button:hover, 
+.elementor-button:visited {    
+    opacity: 1 !important;
+}
+
+.event-column .event-icon-content{
+	display:inline-block !important;
+	padding-right:20px;
+}
+
+.blog-column .blog-icon-content{
+	width:auto !important;
+}
+
+/*--------------------------------------------------------------
+3. Progress Bar
+--------------------------------------------------------------*/
+.elementor-progress-wrapper,
+.elementor-progress-bar {
+	height: 3px !important;
+    line-height: 3px !important;
+}
+.elementor-progress-bar{
+	display:inline-block;
+	position: absolute;
+	transition: none !important;
+	-moz-transition: none !important;
+    -webkit-transition: none !important;	
+	-o-transition: color 0 ease-in;
+	
+	transition-delay: initial !important;
+    transition-duration: initial !important;
+    transition-property: none !important;
+    transition-timing-function: initial !important;	
+	width: auto;
+}
+.elementor-progress-percentage {    
+   font-size:0 !important;
+}
+
+.elementor-widget-progress span.elementor-title{
+	float: right;
+	position: relative;
+	top: -25px;
+}
+
+/*--------------------------------------------------------------
+4. Media Queries
+--------------------------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 767px)  { 
+	.moving-with-4cols .elementor-column{
+		width:50% !important; 
+		float:left !important;
+	}
+	
+	.moving-kindness-2 .elementor-column-wrap.elementor-element-populated{
+		background-color:transparent !important;
+	}
+	.moving-dedication .elementor-column-wrap.elementor-element-populated,
+	.moving-kindness-1 .elementor-column-wrap.elementor-element-populated{
+		background-color: rgba(254, 165, 1, 0.2) !important;
+	}
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px)  { 
+	/* header-1 content width */
+	.header-overlay .hcontent{
+		width:80% !important;
+		margin:0 auto;
+	}
+
+	/* icosn with content */
+	.icon-content .elementor-image-box-wrapper,
+	.icon-content .elementor-icon-box-wrapper,
+	.date-icon-content .elementor-image-box-wrapper,
+	.event-icon-content .elementor-image-box-wrapper,
+    .blog-icon-content .elementor-image-box-wrapper,
+	.faq-icon-content .elementor-image-box-wrapper{
+		display:flex !important;
+	}
+	
+	.event-icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.blog-icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.blog-icon-content .elementor-image-box-wrapper .elementor-image-box-content,
+	.faq-icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.faq-icon-content .elementor-image-box-wrapper .elementor-image-box-title{
+		margin-bottom:0 !important;
+	}
+	
+	.date-icon-content .elementor-image-box-wrapper .elementor-image-box-img img,
+	.event-icon-content .elementor-image-box-wrapper .elementor-image-box-img img{
+		width:16px !important;
+		height:16px !important;
+		margin:0 15px 0 0 !important;
+	}
+	
+	.elementor-element .elementor-image-box-wrapper .elementor-image-box-img{
+		width:auto !important;
+	}
+	
+	.icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.icon-content .elementor-icon-box-wrapper .elementor-icon-box-icon,
+	.blog-icon-content .elementor-image-box-wrapper .elementor-image-box-img img,
+	.faq-icon-content .elementor-image-box-wrapper .elementor-image-box-img img{	
+		margin:0 15px 0 0 !important;
+	}
+	 
+	.elementor-column.date-column{
+		width:auto !important;		
+	}	
+	
+	.donators-column{
+		width:auto !important;
+		margin:0 auto !important;
+	}	
+	
+	.donators-block .elementor-image-box-wrapper{
+		padding:20px;
+	}
+	
+	.date-3col .elementor-column,
+	.our-sponsers .elementor-column{
+		width:auto; 
+		float:left;
+	}
+
+	.date-3col .elementor-row{
+		width:440px;
+		margin:0 auto;
+	}	
+	
+	.our-sponsers .elementor-row{
+		width:420px;
+		margin:0 auto;
+	}
+	
+	.foo-with-4cols .elementor-column{
+		width:50% !important; 
+		float:left !important;
+	}
+	.foo-with-4cols .elementor-row{
+		width:80%;
+		margin:0 auto;
+	}
+	.donators-4col .elementor-column{
+		width:auto; 
+		float:left;
+	}
+	.donators-4col .elementor-row{
+		width:470px;
+		margin:0 auto;
+	}
+}
+
+@media only screen and (min-width: 250px) and (max-width: 500px)  { 	
+	.our-sponsers .elementor-column,
+	.our-sponsers .elementor-row,
+	.foo-with-4cols .elementor-row{
+		width:100% !important;		
+	}
+	
+	.date-3col .elementor-column{
+		width:100%;		
+	}
+	.date-3col .elementor-row{
+		width:150px;
+		margin:0 auto;
+	}
+}
+
+@media only screen and (min-width: 250px) and (max-width: 420px)  { 
+	/* header-1 content width */
+	.header-overlay .hcontent{
+		width:100% !important;
+		margin:0 auto;
+	}
+	
+	/* icosn with content */
+	.icon-content .elementor-image-box-wrapper,
+	.icon-content .elementor-icon-box-wrapper,
+	.date-icon-content .elementor-image-box-wrapper,
+	.event-icon-content .elementor-image-box-wrapper,
+    .blog-icon-content .elementor-image-box-wrapper,
+	.faq-icon-content .elementor-image-box-wrapper{
+		display:flex !important;
+	}
+	
+	.event-icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.blog-icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.blog-icon-content .elementor-image-box-wrapper .elementor-image-box-content,
+	.faq-icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.faq-icon-content .elementor-image-box-wrapper .elementor-image-box-title{
+		margin-bottom:0 !important;
+	}
+	
+	.date-icon-content .elementor-image-box-wrapper .elementor-image-box-img img,
+	.event-icon-content .elementor-image-box-wrapper .elementor-image-box-img img{
+		width:16px !important;
+		height:16px !important;
+		margin:0 15px 0 0 !important;
+	}
+	
+	.elementor-element .elementor-image-box-wrapper .elementor-image-box-img{
+		width:auto !important;
+	}
+	
+	.icon-content .elementor-image-box-wrapper .elementor-image-box-img,
+	.icon-content .elementor-icon-box-wrapper .elementor-icon-box-icon,
+	.blog-icon-content .elementor-image-box-wrapper .elementor-image-box-img img,
+	.faq-icon-content .elementor-image-box-wrapper .elementor-image-box-img img{		
+		margin:0 15px 0 0 !important;
+	}
+	.elementor-column.date-column{
+		width:auto !important;		
+	}
+	
+	.donators-column{
+		width:auto !important;
+		margin:0 auto !important;
+	}	
+	
+	.donators-block .elementor-image-box-wrapper{
+		padding:20px;
+	}
+	
+	.foo-social-icons .elementor-social-icons-wrapper a {
+		margin:8px 0; 
+	}
+}

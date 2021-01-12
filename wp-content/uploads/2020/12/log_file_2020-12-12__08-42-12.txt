@@ -1,0 +1,51 @@
+
+---Downloaded files---
+The import files for: Demo 1 were successfully downloaded!
+Initial max execution time = 5000
+Files info:
+Site URL = http://localhost/saisadhana-foundation
+Data file = C:\xampp\htdocs\saisadhana-foundation/wp-content/themes/arisen/inc/demo-data/demo1/content.xml
+Widget file = C:\xampp\htdocs\saisadhana-foundation/wp-content/themes/arisen/inc/demo-data/demo1/widgets.txt
+Customizer file = not defined!
+Redux files:
+arisen_redux_optns -> C:\xampp\htdocs\saisadhana-foundation/wp-content/themes/arisen/inc/demo-data/demo1/redux.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - Search - Imported
+Recent Posts With Thumbnails - Recent Posts - Imported
+Categories - No Title - Widget already exists
+Tag Cloud - No Title - Imported
+
+Footer Top : 
+
+Text - About Arisen - Imported
+Recent Posts - No Title - Imported
+Tag Cloud - No Title - Imported
+Text - Get In Touch - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: arisen_redux_optns finished successfully!
+
+---pt-ocdi/after_import---
+

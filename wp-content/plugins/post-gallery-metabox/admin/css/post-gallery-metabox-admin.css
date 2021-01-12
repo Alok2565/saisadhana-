@@ -1,0 +1,12 @@
+#post-gallery-metabox-list li {
+	float: left;
+	width: 150px;
+	text-align: center;
+	margin: 10px 10px 10px 0;
+	cursor: move;
+}
+
+#post-gallery-metabox-list li img{  
+	width: 100%;
+	height: auto; 
+}
